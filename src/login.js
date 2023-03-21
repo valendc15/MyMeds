@@ -23,7 +23,7 @@ export const Login = (props) => {
                 <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password" className="user-password" /> <br/>
                 <button type="submit" className="submit">Log In</button>
             </form>
-            <li><Link to="/"><button className="buttonClass">Don't have an account? Register here.</button></Link></li>
+            <li><Link to="/"><button className="select">Don't have an account? Register here.</button></Link></li>
             <p className="copyRight">©2023, MyMeds, SA or its affiliates.</p>
             </div>
         </div>
