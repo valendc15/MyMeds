@@ -1,38 +1,204 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.register{
+  width: 50%;
+  background-position: center;
+  background-size: cover;
+  padding: 10px 10%;
+  overflow: hidden;
+}
+
+h1{
   text-align: center;
+  font-size: 500px;
+  color: rgb(30, 30, 30);
+  font-family: 'Enriqueta', arial, serif; line-height: 1.25; margin: 0 0 10px; font-size: 60px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+form {
+  position: absolute;
+  position: centered;
+  text-align: center;
+  left: 37%;
+  top: 30%;
+  border: 5px solid aquamarine;
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-group {
   display: flex;
-  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+label {
+  width: 100px;
+}
+
+input,
+select,
+textarea {
+  flex: 1;
+  padding: 3px 5px;
+}
+
+.submit-group {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 20px;
+}
+
+button {
+  width: 100px;
+  margin: 0 auto;
+  background-color: black;
   color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.App-link {
-  color: #61dafb;
+.imag1{
+  width: 300px;
+  position: absolute;
+  left: 65%;
+  bottom: 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.select{
+  position: absolute;
+  position: centered;
+  font-size: 11px;
+  left: 42%;
+  top:15%;
+  width:200px;
+  height: 40px;
+  text-align: center;
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #17ed22 0%, #0db1c6  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.App{
+  background-image: url(medsback.jpeg);
+  position: absolute;
+  height: 100%; 
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* CSS */
+.button-59 {
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-59:focus {
+  color: #171e29;
+}
+
+.button-59:hover {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+.button-59:active {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+@media (min-width: 768px) {
+  .button-59 {
+    min-width: 170px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.goto{
+  position: absolute;
+  bottom: 0%;
+  left: 80%;
 }
