@@ -12,18 +12,17 @@ export const Login = (props) => {
     }
 
     return (
-        <div className="bg">
+        <div className="App">
             <div className="text">
             <img src={require("./MyMedsLogo.png")} className="logoLogin"/> 
-            <h2>Login</h2>
-            <form className="login-form" onSubmit={handleSubmit}>
-                <label htmlFor="email">email </label>
-                <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" placeholder="youremail@gmail.com" id="email" name="email" className="user-log"/> <br/>
-                <label htmlFor="password" className="pass">password </label>
-                <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password" className="user-password" /> <br/>
+            <form  onSubmit={handleSubmit} className="formlog">
+                <label htmlFor="email" className="input-text">email </label>
+                <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" placeholder="youremail@gmail.com" id="email" name="email" className="input-group2"/> <br/>
+                <label htmlFor="password" className="input-text">password </label>
+                <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password" className="input-group2" /> <br/>
                 <button type="submit" className="submit">Log In</button>
             </form>
-            <li><Link to="/"><button className="select">Don't have an account? Register here.</button></Link></li>
+            <li><Link to="/"><button className="button-5">Don't have an account? Register here.</button></Link></li>
             <p className="copyRight">©2023, MyMeds, SA or its affiliates.</p>
             </div>
         </div>
