@@ -6,14 +6,14 @@ export const RegisterMedic = () => {
     const [id, idchange] = useState("");
     const [username, namechange] = useState("");
     const [password, passwordchange] = useState("");
-    const [email, emailchange] = useState("");
+    const [mail, emailchange] = useState("");
 
     const navigate = useNavigate();
 
 
     const handlesubmit = (e) => {
       e.preventDefault();
-      let regobj = { id, username, password, email };
+      let regobj = { id, username, password, mail };
       console.log(regobj)
       fetch("http://localhost:8000/medic", {
                 method: "POST",
@@ -59,7 +59,7 @@ return(
                 name="email"
                 placeholder="Enter your email"
                 required="required"
-                value={email} onChange={e => emailchange(e.target.value)}
+                value={mail} onChange={e => emailchange(e.target.value)}
               />
             </div>
             <div className="input-group">
