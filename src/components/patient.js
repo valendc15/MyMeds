@@ -1,48 +1,65 @@
+import {useForm} from "react-hook-form"
+
 export const RegisterPatient = () => {
+
+  const{ register, handleSubmit}= useForm();
+
+  const onSubmit =(data) => {
+    console.log(data)
+  }
+
+
     return(
       <div className="patientregister">
-        <div class="register">
+        <div className="register">
             <div className="patient">
-    <form>
-      <div class="input-group">
-        <label for="username">Username</label>
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <div className="input-group">
+        <label>Username</label>
         <input
           id="username"
           name="username"
           placeholder="Enter Username"
           required="required"
+          type="text"
+          {...register('nombre')}
         />
       </div>
-        <div class="input-group">
-         <label for="dni">DNI</label>
+        <div className="input-group">
+         <label>DNI</label>
          <input
            id="dni"
            name="dni"
            placeholder="Enter DNI"
            required="required"
+           type="text"
+           {...register('DNI')}
+           
          />
        </div>
-        <div class="input-group">
-          <label for="email">Email</label>
+        <div className="input-group">
+          <label>Email</label>
           <input
             id="email"
             type="email"
             name="email"
             placeholder="Enter your email"
             required="required"
+            {...register('email')}
           />
         </div>
-        <div class="input-group">
-          <label for="password">Password</label>
+        <div className="input-group">
+          <label >Password</label>
           <input
             id="password"
             type="password"
             name="password"
             placeholder="Enter your password"
             required="required"
+            {...register('password')}
           />
         </div>
-        <div class="submit-group">
+        <div className="submit-group">
           <button type="submit" id="reggisterBtn">Register</button>
         </div>
       </form>
