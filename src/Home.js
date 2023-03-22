@@ -40,8 +40,8 @@ function Home() {
       <div>
         <h1> Register as a {renderResult()}</h1>
       </div>
-      <div>
-        <select className='select' value={role} onChange={handleOnChange}>
+      <div className='select'>
+        <select className='button-29' value={role} onChange={handleOnChange}>
           <option value="selectRegister">Are you a?</option>
           <option value="patient">Patient</option>
           <option value="medic">Medic</option>
