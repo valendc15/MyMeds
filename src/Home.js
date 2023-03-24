@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 function Home() {
 
-  const [role, setRole]=useState('selectRegister')
+  const [role, setRole]=useState('patient')
 
   const [patientContentVisible, setPatientContentVisible] = useState(false)
   const [medicContentVisible, setMedicContentVisible] = useState(false)
@@ -29,7 +29,7 @@ function Home() {
   const renderResult = () => {
     let result;
     role === "selectRegister"
-      ? (result = "role")
+      ? (result = "patient")
       : (result = role);
     return result;
   };
