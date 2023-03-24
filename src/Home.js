@@ -42,7 +42,6 @@ function Home() {
       </div>
       <div className='select'>
         <select className='button-29' value={role} onChange={handleOnChange}>
-          <option value="selectRegister">Are you a?</option>
           <option value="patient">Patient</option>
           <option value="medic">Medic</option>
           <option value="pharmacy">Pharmacy</option>
